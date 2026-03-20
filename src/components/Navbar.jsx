@@ -36,10 +36,10 @@ const Navbar = () => {
           </div>
           
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-6 text-sm font-medium transition-colors duration-300 ${scrolled ? 'text-moss/80' : 'text-white/80'}">
-            <a href="#philosophy" onClick={(e) => handleNavClick(e, '#philosophy')} className="hover:text-clay transition-colors text-white">Philosophy</a>
-            <a href="#protocol" onClick={(e) => handleNavClick(e, '#protocol')} className="hover:text-clay transition-colors text-white">Protocol</a>
-            <a href="#features" onClick={(e) => handleNavClick(e, '#features')} className="hover:text-clay transition-colors text-white">Intelligence</a>
+          <div className="hidden md:flex items-center gap-6 text-sm font-medium transition-colors duration-300">
+            <a href="#philosophy" onClick={(e) => handleNavClick(e, '#philosophy')} className={`hover:text-clay transition-colors ${scrolled ? 'text-moss' : 'text-white'}`}>Philosophy</a>
+            <a href="#protocol" onClick={(e) => handleNavClick(e, '#protocol')} className={`hover:text-clay transition-colors ${scrolled ? 'text-moss' : 'text-white'}`}>Protocol</a>
+            <a href="#features" onClick={(e) => handleNavClick(e, '#features')} className={`hover:text-clay transition-colors ${scrolled ? 'text-moss' : 'text-white'}`}>Intelligence</a>
           </div>
 
           <button 
