@@ -34,7 +34,7 @@ const Membership = () => {
     <section className="py-32 px-12 md:px-24 bg-cream">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-bold text-moss mb-6">Select your <span className="font-serif italic">regimen.</span></h2>
+            <h2 className="text-3xl md:text-6xl font-bold text-moss mb-6">Select your <span className="font-serif italic">regimen.</span></h2>
             <p className="text-moss/60 max-w-xl mx-auto">Investment in your biology yields the highest dividend. Choose the tier that matches your optimization requirements.</p>
         </div>
 

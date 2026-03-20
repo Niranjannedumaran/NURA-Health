@@ -103,7 +103,7 @@ const Protocol = () => {
 
 const ProtocolCard = ({ index, title, subtitle, desc, icon, color, textColor, children }) => {
   return (
-    <div className={`protocol-card sticky top-0 h-screen w-full flex items-center justify-center p-12 overflow-hidden ${color}`}>
+    <div className={`protocol-card sticky top-0 h-screen w-full flex items-center justify-center p-6 md:p-12 overflow-hidden ${color}`}>
       {children}
       <div className="relative z-10 max-w-4xl text-center">
         <div className="flex justify-center mb-6">
@@ -111,9 +111,9 @@ const ProtocolCard = ({ index, title, subtitle, desc, icon, color, textColor, ch
             {icon}
           </div>
         </div>
-        <div className="text-clay font-mono text-sm tracking-[0.3em] mb-4">{subtitle}</div>
-        <h3 className={`${textColor} text-5xl md:text-8xl font-bold mb-8 tracking-tighter`}>{title}</h3>
-        <p className={`${textColor}/60 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed`}>
+        <div className="text-clay font-mono text-xs tracking-[0.3em] mb-4">{subtitle}</div>
+        <h3 className={`${textColor} text-4xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tighter`}>{title}</h3>
+        <p className={`${textColor}/60 text-base md:text-xl max-w-2xl mx-auto leading-relaxed px-4 md:px-0`}>
           {desc}
         </p>
         <button className="mt-12 px-10 py-4 rounded-full border border-clay text-clay font-bold hover:bg-clay hover:text-white transition-all duration-500 uppercase tracking-widest text-xs">

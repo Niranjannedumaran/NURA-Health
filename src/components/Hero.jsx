@@ -40,20 +40,20 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-moss/40 to-transparent" />
       </div>
 
-      <div className="relative h-full flex flex-col justify-end pb-24 px-12 md:px-24">
+      <div className="relative h-full flex flex-col justify-end pb-24 px-8 md:px-24">
         <div className="max-w-4xl">
           <div className="overflow-hidden">
-            <h1 className="hero-line text-white text-6xl md:text-8xl font-bold tracking-tight leading-[0.9]">
+            <h1 className="hero-line text-white text-5xl md:text-8xl font-bold tracking-tight leading-[0.9]">
               Nature is the
             </h1>
           </div>
           <div className="overflow-hidden mb-8">
-            <h1 className="hero-line text-cream text-7xl md:text-[10rem] font-serif italic leading-[0.8]">
+            <h1 className="hero-line text-cream text-6xl md:text-[10rem] font-serif italic leading-[0.8]">
               Algorithm.
             </h1>
           </div>
           
-          <p className="hero-desc text-cream/70 text-lg md:text-xl max-w-xl font-light tracking-wide leading-relaxed">
+          <p className="hero-desc text-cream/70 text-base md:text-xl max-w-xl font-light tracking-wide leading-relaxed">
             Nura Health bridges biological research and avant-garde wellness. 
             We don't just ask what's wrong—we engineer what's optimal using 
             epigenetic intelligence and clinical precision.

@@ -12,7 +12,7 @@ const Features = () => {
               <span className="w-2 h-2 rounded-full bg-clay animate-pulse" />
               INTELLIGENCE CORE
             </div>
-            <h2 className="text-5xl md:text-7xl font-bold text-moss leading-tight">
+            <h2 className="text-4xl md:text-7xl font-bold text-moss leading-tight">
               Precision <br />
               <span className="font-serif italic font-medium">Instrumentation.</span>
             </h2>
