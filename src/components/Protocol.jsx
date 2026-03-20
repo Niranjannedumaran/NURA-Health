@@ -116,7 +116,10 @@ const ProtocolCard = ({ index, title, subtitle, desc, icon, color, textColor, ch
         <p className={`${textColor}/60 text-base md:text-xl max-w-2xl mx-auto leading-relaxed px-4 md:px-0`}>
           {desc}
         </p>
-        <button className="mt-12 px-10 py-4 rounded-full border border-clay text-clay font-bold hover:bg-clay hover:text-white transition-all duration-500 uppercase tracking-widest text-xs">
+        <button 
+          onClick={() => gsap.to(window, { duration: 1, scrollTo: '#membership', ease: "power4.inOut" })}
+          className="mt-12 px-10 py-4 rounded-full border border-clay text-clay font-bold hover:bg-clay hover:text-white transition-all duration-500 uppercase tracking-widest text-xs"
+        >
           Explore Phase
         </button>
       </div>

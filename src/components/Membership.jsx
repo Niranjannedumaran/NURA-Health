@@ -31,7 +31,7 @@ const Membership = () => {
   ];
 
   return (
-    <section className="py-32 px-12 md:px-24 bg-cream">
+    <section id="membership" className="py-32 px-12 md:px-24 bg-cream">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
             <h2 className="text-3xl md:text-6xl font-bold text-moss mb-6">Select your <span className="font-serif italic">regimen.</span></h2>
