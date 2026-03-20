@@ -60,7 +60,10 @@ const Hero = () => {
           </p>
 
           <div className="hero-desc mt-10 flex gap-6">
-            <button className="px-8 py-4 bg-clay text-white rounded-full font-bold text-sm tracking-widest uppercase hover:bg-white hover:text-moss transition-colors duration-500 shadow-xl shadow-clay/20">
+            <button 
+              onClick={() => gsap.to(window, { duration: 1.5, scrollTo: '#protocol', ease: "power4.inOut" })}
+              className="px-8 py-4 bg-clay text-white rounded-full font-bold text-sm tracking-widest uppercase hover:bg-white hover:text-moss transition-colors duration-500 shadow-xl shadow-clay/20"
+            >
               Start Evaluation
             </button>
             <div className="flex items-center gap-3 text-cream/50 text-xs font-mono uppercase tracking-[0.2em]">

@@ -13,6 +13,16 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleNavClick = (e, target) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    gsap.to(window, {
+      duration: 1.5,
+      scrollTo: { y: target, autoKill: true },
+      ease: "power4.inOut"
+    });
+  };
+
   return (
     <>
       <nav className="fixed top-8 left-1/2 -translate-x-1/2 z-[110] w-[90%] md:w-fit">
@@ -26,15 +36,17 @@ const Navbar = () => {
           
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-6 text-sm font-medium transition-colors duration-300 ${scrolled ? 'text-moss/80' : 'text-white/80'}">
-            <a href="#philosophy" className="hover:text-clay transition-colors">Philosophy</a>
-            <a href="#protocol" className="hover:text-clay transition-colors">Protocol</a>
-            <a href="#features" className="hover:text-clay transition-colors">Intelligence</a>
+            <a href="#philosophy" onClick={(e) => handleNavClick(e, '#philosophy')} className="hover:text-clay transition-colors text-white">Philosophy</a>
+            <a href="#protocol" onClick={(e) => handleNavClick(e, '#protocol')} className="hover:text-clay transition-colors text-white">Protocol</a>
+            <a href="#features" onClick={(e) => handleNavClick(e, '#features')} className="hover:text-clay transition-colors text-white">Intelligence</a>
           </div>
 
-          <button className={`
-            hidden md:block ml-4 px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 btn-magnetic
-            ${scrolled ? 'bg-moss text-cream hover:bg-clay' : 'bg-cream text-moss hover:bg-clay hover:text-white'}
-          `}>
+          <button 
+            onClick={(e) => handleNavClick(e, '#membership')}
+            className={`
+              hidden md:block ml-4 px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 btn-magnetic
+              ${scrolled ? 'bg-moss text-cream hover:bg-clay' : 'bg-cream text-moss hover:bg-clay hover:text-white'}
+            `}>
             Join Membership
           </button>
 
